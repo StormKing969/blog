@@ -8,8 +8,11 @@ export const format = ({ children }) => {
       <Head>
         <title>Blog</title>
       </Head>
+
       <Header></Header>
+
       <main>{children}</main>
+
       <Footer></Footer>
     </>
   );
