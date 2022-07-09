@@ -57,7 +57,7 @@ function Post() {
 export const popular = () => {
   return (
     <section className="container mx-auto md:px-10 py-16">
-      <h1 className="font-bold text-5l py-12 text-center">Most Popular</h1>
+      <h1 className="font-bold text-xl py-12 text-center">Most Popular</h1>
 
       {/* Swiper */}
       <Swiper slidesPerView={2}>

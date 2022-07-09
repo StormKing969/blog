@@ -6,6 +6,7 @@ import Format from "../layout/format";
 import Trending from "../components/trending";
 import Latest from "../components/latest";
 import Popular from "../components/popular";
+import Categories from "../components/categories";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Trending></Trending>
       <Latest></Latest>
       <Popular></Popular>
+      <Categories></Categories>
     </Format>
   );
 }
