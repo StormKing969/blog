@@ -13,7 +13,7 @@ export const newsletter = () => {
         </div>
 
         <button className="bg-orange-400 px-20 py-3 rounded-full text-gray-50 text-xl">
-            Subscribe
+          Subscribe
         </button>
       </div>
     </section>

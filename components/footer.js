@@ -5,11 +5,12 @@ import Link from "next/link";
 import Newsletter from "./child/newsletter";
 
 export const footer = () => {
-    const bg = {
-        backgroundImage: "url('./footer.png')",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "bottom left"
-    }
+  const bg = {
+    backgroundImage: "url('./footer.png')",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "bottom left",
+  };
+  
   return (
     <footer className="bg-gray-50" style={bg}>
       <Newsletter></Newsletter>
