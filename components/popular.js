@@ -16,7 +16,7 @@ function Post() {
         <Link href={"/"}>
           <a>
             <Image
-              src={"/images/fluency/fluency.jpg"}
+              src={"/images/blogPostImg/fluency.jpg"}
               width={600}
               height={400}
               alt="Trending Post Image"

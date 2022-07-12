@@ -5,7 +5,7 @@ export const author = () => {
   return (
     <div className="author flex py-5">
       <Image
-        src={"/images/fluency/author.jpg"}
+        src={"/images/author/saj.jpg"}
         width={60}
         height={60}
         className="rounded-full"
