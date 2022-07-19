@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Author from "./child/author";
+import getPost from "../lib/helper";
+import fetcher from "../lib/fetcher";
 
 function Post() {
   return (
@@ -48,10 +50,16 @@ function Post() {
   );
 }
 
-export const latest = () => {
+export const articles = () => {
+//   getPost(2).then((post) => {
+//     console.log(post);
+//   });
+const {data, isLoading, isError} = fetcher("api/posts")
+console.log(data);
+
   return (
     <section className="container mx-auto md:px-20 py-10">
-      <h1 className="font-bold text-center text-4xl py-12">Latest Posts</h1>
+      <h1 className="font-bold text-center text-4xl py-12">All Posts</h1>
 
       {/* Grid Columns */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-14">
@@ -66,4 +74,4 @@ export const latest = () => {
   );
 };
 
-export default latest;
+export default articles;

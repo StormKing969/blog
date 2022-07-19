@@ -10,7 +10,7 @@ export const footer = () => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "bottom left",
   };
-  
+
   return (
     <footer className="bg-gray-50" style={bg}>
       <Newsletter></Newsletter>
