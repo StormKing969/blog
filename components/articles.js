@@ -4,14 +4,19 @@ import Author from "./child/author";
 import getPost from "../lib/helper";
 import fetcher from "../lib/fetcher";
 
-function Post() {
+function Post({ data }) {
+
+    console.log(data);
+  const { id, title, subtitle, category, img, description, published, author } =
+    data;
+    
   return (
     <div className="item">
       <div className="images">
         <Link href={"/"}>
           <a>
             <Image
-              src={"/images/blogPostImg/fluency.jpg"}
+              src={img || "/"}
               width={500}
               height={350}
               className="rounded"
@@ -50,12 +55,11 @@ function Post() {
   );
 }
 
+
+
 export const articles = () => {
-//   getPost(2).then((post) => {
-//     console.log(post);
-//   });
-const {data, isLoading, isError} = fetcher("api/posts")
-console.log(data);
+  const { information, isLoading, isError } = fetcher("api/posts");
+  if (information) {   console.log(information); }
 
   return (
     <section className="container mx-auto md:px-20 py-10">
@@ -63,12 +67,11 @@ console.log(data);
 
       {/* Grid Columns */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-14">
-        {Post()}
-        {Post()}
-        {Post()}
-        {Post()}
-        {Post()}
-        {Post()}
+        {
+                // information.map((value, index) => {
+                //     <Post information={value} key={index}></Post>
+                // })
+        }
       </div>
     </section>
   );
