@@ -6,7 +6,7 @@ import Newsletter from "./child/newsletter";
 
 export const footer = () => {
   const bg = {
-    backgroundImage: "url('./footer.png')",
+    backgroundImage: "",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "bottom left",
   };
